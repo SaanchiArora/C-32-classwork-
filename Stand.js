@@ -1,4 +1,4 @@
-class Ground {
+class Stand {
     constructor(x,y,width,height) {
       var options = {
           isStatic: true
@@ -11,8 +11,9 @@ class Ground {
     display(){
       var pos = this.body.position;
       rectMode(CENTER);
-      
-      fill("brown");
+      stroke(0);
+      strokeWeight(5);
+      fill(rgb(189,66,69));
       rect(pos.x, pos.y, this.width, this.height);
     }
   };
